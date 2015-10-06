@@ -65,7 +65,7 @@ unset color_prompt force_color_prompt
 
 source ~/.bash_colors
 source /etc/bash_completion.d/git-prompt
-export PS1="${Green}\w${NRed}\$(__git_ps1) ${NOrange}\$ ${Color_Off}"
+export PS1="${Green}\w${NRed}\$(__git_ps1) ${NOrange}🍔  ${Color_Off}"
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in

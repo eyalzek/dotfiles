@@ -20,5 +20,12 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 
-alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias fuck='eval $(thefuck $(fc -ln -1)); history -a; history -c; history -r'
 alias FUCK='fuck'
+
+function sblm
+{
+    nohup sublime-text $1 >/dev/null 2>&1 &
+}
+alias subl='sblm'
+alias workdir='cd ~/Documents/code/work/'
