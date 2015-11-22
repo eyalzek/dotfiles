@@ -29,3 +29,5 @@ function sblm
 }
 alias subl='sblm'
 alias workdir='cd ~/Documents/code/work/'
+
+alias studio='/opt/android-studio/bin/studio.sh'

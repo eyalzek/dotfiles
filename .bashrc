@@ -65,6 +65,7 @@ unset color_prompt force_color_prompt
 
 source ~/.bash_colors
 source /etc/bash_completion.d/git-prompt
+export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="${Green}\w${NRed}\$(__git_ps1) ${NOrange}🍔  ${Color_Off}"
 
 # If this is an xterm set the title to user@host:dir
@@ -97,3 +98,5 @@ fi
 
 # export CLASSPATH=~/Downloads/commons-io-2.4/
 export NODE_PATH=/usr/local/lib/node_modules:/usr/lib/nodejs:/usr/share/javascript
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
