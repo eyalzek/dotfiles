@@ -5,7 +5,7 @@
 	st = status
 	df = diff
 [user]
-	email = eyal.ez@gmail.com
+	email = ez@hubrick.com
 	name = eyalzek
 [push]
 	default = simple

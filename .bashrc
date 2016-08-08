@@ -99,13 +99,15 @@ fi
 # export CLASSPATH=~/Downloads/commons-io-2.4/
 export NODE_PATH=/usr/local/lib/node_modules:/usr/lib/nodejs:/usr/share/javascript
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# add home bin folder to PATH
+export PATH="$PATH:/home/eyal/bin"
 
 export NVM_DIR="/home/eyal/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # add chef-dk to PATH
-export PATH="$PATH:/opt/chefdk/bin"
+#export PATH="$PATH:/opt/chefdk/bin"
 
 # added by travis gem
 [ -f /home/eyal/.travis/travis.sh ] && source /home/eyal/.travis/travis.sh

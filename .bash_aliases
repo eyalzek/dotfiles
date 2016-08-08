@@ -25,9 +25,26 @@ alias FUCK='fuck'
 
 function sblm
 {
-    nohup sublime-text $1 >/dev/null 2>&1 &
+    nohup sublime-text "$1" >/dev/null 2>&1 &
 }
 alias subl='sblm'
 alias workdir='cd ~/Documents/code/work/'
 
 alias studio='/opt/android-studio/bin/studio.sh'
+
+function berksdbg
+{
+    DEBUG_RESOLVER=1 berks "$@" -d
+}
+alias berks_debug=berksdbg
+
+function set_env
+{
+    eval $(set_aws_env.py $1)
+}
+alias setawsenv=set_env
+function br_clean
+{
+   git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d
+}
+alias branch_clean=br_clean
