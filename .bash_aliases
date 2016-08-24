@@ -43,6 +43,7 @@ function set_env
     eval $(set_aws_env.py $1)
 }
 alias setawsenv=set_env
+
 function br_clean
 {
    git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d

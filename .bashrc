@@ -109,5 +109,8 @@ export NVM_DIR="/home/eyal/.nvm"
 # add chef-dk to PATH
 #export PATH="$PATH:/opt/chefdk/bin"
 
+# vim as default cli editor
+export EDITOR=/usr/bin/vim
+
 # added by travis gem
 [ -f /home/eyal/.travis/travis.sh ] && source /home/eyal/.travis/travis.sh
