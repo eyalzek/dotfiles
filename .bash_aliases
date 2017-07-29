@@ -19,16 +19,11 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-
-alias fuck='eval $(thefuck $(fc -ln -1)); history -a; history -c; history -r'
-alias FUCK='fuck'
-
 function sblm
 {
     nohup sublime-text "$1" >/dev/null 2>&1 &
 }
 alias subl='sblm'
-alias workdir='cd ~/Documents/code/work/'
 
 alias studio='/opt/android-studio/bin/studio.sh'
 
@@ -49,3 +44,9 @@ function br_clean
    git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d
 }
 alias branch_clean=br_clean
+
+alias pssh="parallel-ssh -O StrictHostKeyChecking=no"
+
+alias mi=mediainfo
+
+alias get_subs='subliminal download -l en .'

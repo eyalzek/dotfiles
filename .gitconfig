@@ -4,8 +4,10 @@
 	ci = commit
 	st = status
 	df = diff
+    fp = fetch --prune
+    mm = merge origin/master
 [user]
-	email = ez@hubrick.com
+	email = eyal.ez@gmail.com
 	name = eyalzek
 [push]
 	default = simple
